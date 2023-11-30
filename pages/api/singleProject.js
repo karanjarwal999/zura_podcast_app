@@ -2,8 +2,9 @@ import dbConnect from './utils/dbConnect';
 import Project from './models/Project';
 import Podcast from './models/podcast';
 
+
 export default async function handler(req, res) {
-  
+  // await cors(req,res);
   await dbConnect();
 
   try {

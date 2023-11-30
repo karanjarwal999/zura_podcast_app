@@ -1,6 +1,7 @@
 import { useDisclosure } from '@chakra-ui/react';
 import Image from 'next/image';
 import React from 'react'
+import AddPodcast from './Modals/AddPodcast';
 
 function NOPodcast() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -23,8 +24,8 @@ function NOPodcast() {
     <div>
         <h3 className="text-[#7E22CE] font-bold text-[40px] my-4">Uplode</h3>
       <div className="flex justify-between">
-        {uplodeOption.map((card) => (
-          <div onClick={onOpen}
+        {uplodeOption.map((card,ind) => (
+          <div key={ind} onClick={onOpen}
             id="box-shadow"
             className="p-3 flex items-center gap-5 w-[28%] rounded-lg font-bold border-[1px] border-[gray]"
           >
@@ -43,8 +44,8 @@ function NOPodcast() {
         ))}
       </div>
       <div className="flex justify-between mt-5">
-        {uplodeOption.map((card) => (
-          <div  onClick={onOpen}
+        {uplodeOption.map((card,ind) => (
+          <div key={ind}  onClick={onOpen}
             id="box-shadow"
             className="p-3 flex items-center gap-5 w-[28%] rounded-lg font-bold border-[1px] border-[gray]"
           >

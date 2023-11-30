@@ -36,7 +36,7 @@ export default function Home() {
 
 
   return (
-    <main className='px-10 py-7 pb-20'>
+    <main className='px-10 py-7 '>
       <Head>
          <title>LAMA</title>
       </Head>
@@ -45,7 +45,7 @@ export default function Home() {
       <TopNavbar/>
       
       <div>
-        <button className='h-[41px] w-[200px] ml-[9vw] mt-[30px] rounded-[20px] border-[2px] flex gap-2 items-center justify-center text-black text-[21px]'><IoHomeOutline size={'29px'} color='black'/> Back to Home</button>
+        <button className=' py-1 px-3 ml-[9vw] mt-[25px] rounded-[20px] border-[2px] flex gap-2 items-center justify-center text-black text-[21px]'><IoHomeOutline size={'29px'} color='black'/> Back to Home</button>
          
          {/* if project length is 0 the showing no projects com. else render all projects */}
          {projects.length==0 ?<NoProject />:

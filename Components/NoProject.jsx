@@ -10,8 +10,8 @@ function NoProject() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className="w-[1300px] m-auto flex flex-col gap-[20px]">
-      <h2 className="text-center text-[60px] font-bold text-[#7E22CE] ">
+    <div className="w-[1000px] m-auto flex flex-col gap-[15px]">
+      <h2 className="text-center text-[50px] font-bold text-[#7E22CE] ">
         Create a New Project
       </h2>
       <Image
@@ -21,7 +21,7 @@ function NoProject() {
         width={405}
         height={271}
       />
-      <p className="text-[30px] text-center">
+      <p className="text-[20px] text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -29,9 +29,9 @@ function NoProject() {
       </p>
       <button
         onClick={onOpen}
-        className="m-auto text-[40px] bg-black text-white flex items-center gap-2 rounded-[10px] py-[15px] px-[30px]"
+        className="m-auto text-[30px] bg-black text-white flex items-center gap-2 rounded-[10px] py-[10px] px-[20px]"
       >
-        <FiPlusCircle size={"55px"} />
+        <FiPlusCircle size={"30px"} />
         Create New Project
       </button>
 

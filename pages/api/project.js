@@ -3,7 +3,9 @@
 import dbConnect from './utils/dbConnect';
 import Project from './models/Project';
 
+
 export default async function handler(req, res) {
+  // await cors(req,res);
   const { method } = req;
 
   await dbConnect();

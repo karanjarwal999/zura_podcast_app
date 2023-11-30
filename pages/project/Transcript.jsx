@@ -26,8 +26,7 @@ function Transcript() {
       }
 
       function handleSave() {
-         setPodcast((prev)=>({...prev,description:newdes}))
-         dispatch(updatePodcast(Podcast,showToast))
+         dispatch(updatePodcast(Podcast.id,{description:newdes},showToast))
          router.push('/project/Uplode')
       }
 

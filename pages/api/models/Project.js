@@ -7,7 +7,7 @@ const ProjectSchema = new Schema({
     type: String,
     required: true,
   },
-  podcast:{ type:[Schema.Types.ObjectId], ref:'Podcast'} ,
+  podcast:{ type:[Schema.Types.ObjectId],default:[], ref:'Podcast'} ,
 });
 
 const Project = mongoose.models.Project || mongoose.model('Project', ProjectSchema);

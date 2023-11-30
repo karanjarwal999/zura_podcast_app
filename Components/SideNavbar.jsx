@@ -45,7 +45,7 @@ function SideNavbar({ children }) {
           <p className="py-2 my-2">Podcast Uplode Flow</p>
           <Link href={"/project/Uplode"} id={(path=='Uplode'|| path=='Transcript')?"active":'notActive'} className="flex gap-4 items-center py-3 px-3" ><TbCircleNumber1  size={"25px"} />Projects</Link>
           <Link href={"/project/Widget_Configurations"} id={path=='Widget_Configurations'?"active":'notActive'} className="flex gap-4 items-center py-3 px-3" ><TbCircleNumber2 size={"25px"} />Widget Configurations</Link>
-          <Link href={"#"} className="cursor-not-allowed flex gap-4 items-center py-3 px-3 bg-gray-200 rounded-[50px]" ><TbCircleNumber3 size={"25px"} />Deployment</Link>
+          <Link href={"#"} className="cursor-not-allowed flex gap-4 items-center py-3 px-3 bg-gray-100 rounded-[50px]" ><TbCircleNumber3 size={"25px"} />Deployment</Link>
           <Link href={"#"} className="cursor-not-allowed flex gap-4 items-center py-3 px-3 border-b-2 border-gray-300" ><TbCircleNumber4 size={"25px"} /> Pricing</Link>
         </nav>
         <Link href={"/project/Account"} id={path=='Account'?"active":'notActive'}

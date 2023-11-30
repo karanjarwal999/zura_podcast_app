@@ -49,22 +49,22 @@ function handleSubmit() {
     <div>
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent maxW={"1000px"}>
-          <div className=" p-[20px] text-[20px] flex flex-col gap-4 ">
+        <ModalContent maxW={"800px"}>
+          <div className=" p-[20px] text-[20px] flex flex-col gap-3 ">
             <h4 className="font-bold text-[30px]">Create Podcast</h4>
             <div className="flex flex-col gap-3">
               <label htmlFor="projectName">Name :</label>
               <Input
                 type="text"
-                fontSize={"25px"}
+                fontSize={"20px"}
                 placeholder="Type here"
-                height={"50px"}
+                height={"40px"}
                 onChange={(e)=>setPodcastData((prev)=>({...prev,"name":e.target.value}))}
               />
               <label htmlFor="projectName">Description :</label>
               <Textarea
                 type="text"
-                fontSize={"25px"}
+                fontSize={"20px"}
                 placeholder="Type here"
                 height={"50px"}
                 onChange={(e)=>setPodcastData((prev)=>({...prev,"description":e.target.value}))}

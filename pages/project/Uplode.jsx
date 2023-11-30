@@ -36,7 +36,7 @@ function index() {
   }, [router.isReady]);
   return (
     <SideNavbar>
-      {Project.length==0?<NOPodcast/>:<ShowPodcast Project={Project}/>}
+      {Project?.podcast?.length==0?<NOPodcast/>:<ShowPodcast Project={Project}/>}
     </SideNavbar>
   );
 }

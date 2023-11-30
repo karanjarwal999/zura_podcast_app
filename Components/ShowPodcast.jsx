@@ -31,8 +31,8 @@ function ShowPodcast({ Project }) {
         {Project.name}
       </h3>
       <div className="flex gap-5">
-        {uplodeOption.map((card) => (
-          <div  onClick={onOpen}
+        {uplodeOption.map((card,ind) => (
+          <div key={ind} onClick={onOpen}
             id="box-shadow"
             className="p-3 flex items-center gap-5 w-[25%] rounded-lg font-bold border-[1px] border-[gray]"
           >
@@ -69,10 +69,10 @@ function ShowPodcast({ Project }) {
             </Tr>
           </Thead>
           <Tbody>
-            {Project.podcast?.map((el) => (
-              <Tr>
+            {Project.podcast?.map((el,ind) => (
+              <Tr key={ind}>
                 <Th>{el.title}</Th>
-                <Th>12 JUN 23 14:35</Th>
+                <Th>{el.time}</Th>
                 <Th>Done</Th>
                 <Th>
                   <button onClick={()=>router.push(`/project/Transcript?id=${el._id}`)} className="py-1 px-3 border-[1px] border-gray-300">Edit</button>

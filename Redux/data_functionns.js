@@ -7,7 +7,7 @@ export const AddProject = (data,showToast) => async (dispatch) => {
         let res = axios.post('/api/project', { ...data })
         let temp = await res
         showToast('project Added successfully')
-        dispatch({type:UPDATE_POJECT,payload:{...data,podcast:[]}})
+        dispatch(FetchAllProject)
     } catch (error) {
         showToast(error.message,"error")
     }
@@ -55,10 +55,10 @@ export const DeletePodcast = (projectId,podcastId) => async (dispatch) => {
     }
 }
 
-export const updatePodcast=(data,showToast)=> async (dispatch) => {
-
+export const updatePodcast=(id,Data,showToast)=> async (dispatch) => {
+    console.log()
     try {
-        let res = axios.patch('/api/podcast',{podcastId:data.id,Data:data})
+        let res = axios.patch('/api/podcast',{podcastId:id,Data})
         let temp = await res
         showToast('podcast updated successfully')
     } catch (error) {

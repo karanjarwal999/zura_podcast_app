@@ -15,10 +15,10 @@ function RenderProjects({ projects }) {
   return (
     <div className="w-[1170px] mx-auto ">
       <div className="flex justify-between items-center mb-[20px]">
-        <h2 className="text-[#7E22CE] text-[73px] font-bold">Projects</h2>
+        <h2 className="text-[#7E22CE] text-[60px] font-bold">Projects</h2>
         <button
           onClick={onOpen}
-          className="flex items-center gap-3 bg-black text-white px-[15px] py-[7px] rounded-[10px] text-[25px]"
+          className="flex items-center gap-3 bg-black text-white px-[15px] py-[7px] rounded-[10px] text-[22px]"
         >
           <FiPlusCircle size={"25px"} />
           Create New Project

@@ -44,16 +44,16 @@ function handleSubmit() {
     <div>
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent maxW={"1000px"}>
-          <div className=" p-[30px] text-[30px] flex flex-col gap-5 ">
-            <h4 className="font-bold text-[40px]">Create Project</h4>
+        <ModalContent maxW={"800px"}>
+          <div className=" p-[30px] text-[25px] flex flex-col gap-5 ">
+            <h4 className="font-bold text-[35px]">Create Project</h4>
             <div className="flex flex-col gap-3">
               <label htmlFor="projectName">Enter Project Name :</label>
               <Input
                 type="text"
-                fontSize={"30px"}
+                fontSize={"20px"}
                 placeholder="Type here"
-                height={"60px"}
+                height={"50px"}
                 onChange={(e)=>setProjectData(e.target.value)}
               />
               <p className={`text-red-600 opacity-${warning?80:0}`}>{warning}</p>

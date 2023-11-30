@@ -11,7 +11,8 @@ const PodcastSchema = new Schema({
   description: {
     type: String,
     required: true,
-  }
+  },
+  time: { type: String, required: true}
 });
 
 const Podcast = mongoose.models.Podcast || mongoose.model('Podcast', PodcastSchema);
